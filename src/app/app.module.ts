@@ -7,6 +7,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ZBar } from '@ionic-native/zbar';
+import { Vibration } from '@ionic-native/vibration';
+import { Toast } from '@ionic-native/toast';
+
+
+
 
 
 @NgModule({
@@ -25,7 +30,7 @@ import { ZBar } from '@ionic-native/zbar';
   ],
   providers: [
     StatusBar,
-    SplashScreen,ZBar,
+    SplashScreen,ZBar,Vibration,Toast,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
