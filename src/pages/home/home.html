@@ -10,4 +10,8 @@
   <button ion-button block (click)="test()">测试扫码(zbar)</button>
   <button ion-button block (click)="vi()">震动</button>
   <button ion-button block (click)="toas()">toast</button>
+  <button ion-button block (click)="detail()">detail</button>
+
+  <zxing-scanner  (scanSuccess)="ss($event)" (scanError) = "error($event)"></zxing-scanner>
+
 </ion-content>
